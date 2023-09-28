@@ -16,10 +16,10 @@ export default function NavBar({}: props) {
   const pathname = usePathname();
 
   return (
-    <div className='w-full p-4 pr-0 sm:w-1/6'>
+    <div className='w-full p-4 pr-0 pt-10 sm:w-1/4'>
       <div className='sm:mb-8 sm:ml-2'>
         <Link className='font-extrabold' href={'/'}>
-          <h2 className='text-center sm:text-start'>Kitaby</h2>
+          <h2 className='text-center text-white sm:text-start'>Kitaby</h2>
         </Link>
       </div>
       <div className='flex flex-row justify-start sm:flex-col'>
