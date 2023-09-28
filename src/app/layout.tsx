@@ -15,7 +15,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang='en'>
       <body
-        className={`${nunito.className} prose flex max-w-none flex-col prose-headings:m-0 prose-a:no-underline sm:flex-row`}
+        className={`${nunito.className} prose flex max-w-none flex-col prose-headings:m-0 prose-a:no-underline md:flex-row`}
       >
         <NavBar />
         {children}

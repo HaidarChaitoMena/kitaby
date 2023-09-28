@@ -16,16 +16,16 @@ export default function NavBar({}: props) {
   const pathname = usePathname();
 
   return (
-    <div className='w-full p-4 pr-0 pt-10 sm:w-1/4'>
-      <div className='sm:mb-8 sm:ml-2'>
+    <div className='w-full p-4 pr-0 md:pt-10 md:w-1/4'>
+      <div className='md:mb-8 md:ml-2'>
         <Link className='font-extrabold' href={'/'}>
-          <h2 className='text-center text-white sm:text-start'>Kitaby</h2>
+          <h2 className='text-center text-white md:text-start'>Kitaby</h2>
         </Link>
       </div>
-      <div className='flex flex-row justify-start sm:flex-col'>
+      <div className='flex flex-row justify-start md:flex-col'>
         <Link
           href={'/'}
-          className={`mb-2  flex h-14 w-full items-center justify-center p-5 pl-0 text-start sm:justify-start sm:rounded-l-3xl ${
+          className={`mb-2  flex h-14 w-full items-center justify-center p-5 pl-0 text-start md:justify-start md:rounded-l-3xl ${
             pathname == '/' ? 'bg-primary' : ''
           }`}
         >
@@ -34,7 +34,7 @@ export default function NavBar({}: props) {
         </Link>
         <Link
           href={'/discover'}
-          className={`mb-2  flex h-14 w-full items-center justify-center text-start sm:justify-start sm:rounded-l-3xl sm:p-5 sm:pl-0 ${
+          className={`mb-2  flex h-14 w-full items-center justify-center text-start md:justify-start md:rounded-l-3xl md:p-5 md:pl-0 ${
             pathname == '/discover' ? 'bg-primary' : ''
           }`}
         >
@@ -43,7 +43,7 @@ export default function NavBar({}: props) {
         </Link>
         <Link
           href={'/categories'}
-          className={`mb-2  flex h-14 w-full items-center justify-center p-5 pl-0 text-start sm:justify-start sm:rounded-l-3xl ${
+          className={`mb-2  flex h-14 w-full items-center justify-center p-5 pl-0 text-start md:justify-start md:rounded-l-3xl ${
             pathname == '/categories' ? 'bg-primary' : ''
           }`}
         >
@@ -52,7 +52,7 @@ export default function NavBar({}: props) {
         </Link>
         <Link
           href={'/favorites'}
-          className={`mb-2  flex h-14 w-full items-center justify-center p-5 pl-0 text-start sm:justify-start sm:rounded-l-3xl ${
+          className={`mb-2  flex h-14 w-full items-center justify-center p-5 pl-0 text-start md:justify-start md:rounded-l-3xl ${
             pathname == '/favorites' ? 'bg-primary' : ''
           }`}
         >
