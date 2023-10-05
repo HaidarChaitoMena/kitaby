@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -11,7 +12,7 @@ export default function Hero() {
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur id, voluptate voluptatibus
         at laudantium esse facilis
       </div>
-      <button className='btn btn-neutral hover:bg-primary'>Explore</button>
+      <Link href={'/products'}  className='btn btn-neutral hover:bg-primary'>Explore</Link>
     </div>
   );
 }
