@@ -19,7 +19,7 @@ export default function NavBar({}: props) {
     <div className='w-full p-4 pr-0 md:pt-10 md:w-1/4'>
       <div className='md:mb-8 md:ml-2'>
         <Link className='font-extrabold' href={'/'}>
-          <h2 className='text-center text-white md:text-start'>Kitaby</h2>
+          <h2 className='text-center text-neutral-content md:text-start'>Kitaby</h2>
         </Link>
       </div>
       <div className='flex flex-row justify-start md:flex-col'>

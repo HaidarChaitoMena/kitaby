@@ -3,9 +3,9 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <div className='relative mt-6 w-full rounded-2xl bg-secondary p-6'>
+    <div className='relative my-8 w-full rounded-2xl bg-secondary p-6'>
         <Image  className="float-right m-0 md:h-48 md:w-56" src={'/static/images/space-book.png'} alt="book" height={150} width={150} />
-      <div className='mb-2 w-full md:w-2/3 text-4xl font-bold text-white'>
+      <div className='mb-2 w-full md:w-2/3 text-4xl font-bold text-neutral-content'>
         Lorem ipsum dolor sit amet consectetur adipisicing elit
       </div>
       <div className='mb-8 w-full md:w-2/3'>
