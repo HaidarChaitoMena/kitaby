@@ -1,3 +1,4 @@
+import Options from '@/components/checkout/PaymentMethod';
 import BookCard from '@/components/home/BookCard';
 import Hero from '@/components/home/Hero';
 import SearchBar from '@/components/SearchBar';
@@ -18,8 +19,6 @@ export default function Home() {
         </div>
       </div>
       <div className='flex flex-row flex-wrap gap-3 md:px-8'>
-        <BookCard />
-        <BookCard />
         <BookCard />
         <BookCard />
       </div>

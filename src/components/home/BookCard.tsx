@@ -4,7 +4,7 @@ import Link from 'next/link';
 export default function BookCard() {
   return (
     <div className='card card-side mb-4 w-full md:w-[49%]'>
-      <figure className='m-0 h-fit w-full self-start md:w-2/5'>
+      <figure className='m-0 my-auto h-fit w-60 self-start'>
         <Image height={150} width={150} src={'/static/images/space-book.png'} alt='Movie' />
       </figure>
       <div className='card-body p-0 pl-4'>
