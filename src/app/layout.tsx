@@ -3,6 +3,7 @@ import '../../public/static/styles/globals.css';
 import type { Metadata } from 'next';
 import { Nunito } from 'next/font/google';
 import SideBar from '@/components/SideBar';
+import SearchBar from '@/components/SearchBar';
 
 const nunito = Nunito({ subsets: ['latin'] });
 
@@ -18,7 +19,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         className={`${nunito.className} prose flex max-w-none flex-col prose-headings:m-0 prose-a:no-underline md:flex-row`}
       >
         <NavBar />
-        {children}
+        <main className='h-full min-h-screen w-full rounded-[2rem]  bg-primary p-10 px-6 md:px-14'>
+          <SearchBar />
+          {children}
+        </main>
         <SideBar />
       </body>
     </html>
