@@ -19,11 +19,21 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         className={`${nunito.className} prose flex max-w-none flex-col prose-headings:m-0 prose-a:no-underline md:flex-row`}
       >
         <NavBar />
-        <main className='h-full min-h-screen w-full rounded-[2rem]  bg-primary p-10 px-6 md:px-14'>
+        <main className='h-full min-h-screen w-full rounded-3xl  bg-primary p-8 px-6 md:px-14'>
           <SearchBar />
           {children}
         </main>
-        <SideBar />
+        <SideBar
+          selectedBook={{
+            id: 1,
+            auther: 'Henry Shalow',
+            publishDate: '10/10/2010',
+            paperPage: 10,
+            language: 'EN',
+            rating: 10,
+          }}
+          featuredBooks={[]}
+        />
       </body>
     </html>
   );

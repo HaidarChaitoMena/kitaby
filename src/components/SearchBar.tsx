@@ -23,7 +23,7 @@ export default function SearchBar() {
         <input
           type='search'
           name='q'
-          className='input w-full rounded-2xl bg-secondary pl-10 text-sm'
+          className='input w-full rounded-3xl bg-secondary pl-10 text-sm'
           placeholder='Search...'
           autoComplete='off'
         />

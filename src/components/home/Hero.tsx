@@ -3,13 +3,13 @@ import Link from 'next/link';
 
 export default function Hero() {
   return (
-    <div className='relative mb-8 w-full rounded-2xl bg-secondary p-6'>
+    <div className='relative mb-8 w-full overflow-hidden rounded-3xl bg-secondary p-6'>
       <Image
-        className='float-right m-0 md:h-48 md:w-56'
-        src={'/static/images/space-book.png'}
+        className='float-right m-0 w-96'
+        src={'/static/images/hero.png'}
         alt='book'
-        height={150}
-        width={150}
+        height={380}
+        width={380}
       />
       <div className='mb-2 w-full text-4xl font-bold text-neutral-content md:w-2/3'>
         Lorem ipsum dolor sit amet consectetur adipisicing elit

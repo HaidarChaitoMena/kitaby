@@ -22,7 +22,8 @@ const config: Config = {
           success: '#B9ED92',
           warning: '#f4c152',
           error: '#fb6f84',
-          'neutral-content': 'white'
+          'neutral-content': 'white',
+          'primary-content': '#787CAD',
         },
       },
     ],

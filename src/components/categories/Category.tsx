@@ -25,7 +25,7 @@ export default function Category({ id, label, slug, image }: props) {
       custom={id}
       animate='visible'
       initial='hidden'
-      className='card image-full h-44 cursor-pointer bg-base-100 shadow-xl transition duration-150 ease-in-out hover:scale-110'
+      className='card image-full h-44 cursor-pointer bg-base-100 shadow-xl transition duration-150 ease-in-out hover:brightness-90'
     >
       {image && (
         <figure>

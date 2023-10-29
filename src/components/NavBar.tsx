@@ -1,11 +1,5 @@
 'use client';
-import {
-  AiOutlineAccountBook,
-  AiOutlineBook,
-  AiOutlineHeart,
-  AiOutlineHome,
-  AiOutlineSearch,
-} from 'react-icons/ai';
+import { AiOutlineBook, AiOutlineHeart, AiOutlineHome, AiOutlineSearch } from 'react-icons/ai';
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
@@ -16,7 +10,7 @@ export default function NavBar({}: props) {
   const pathname = usePathname();
 
   return (
-    <div className='w-full p-4 pr-0 md:pt-10 md:w-1/4'>
+    <div className='w-full p-4 pr-0 md:w-1/4 md:pt-8'>
       <div className='md:mb-8 md:ml-2'>
         <Link className='font-extrabold' href={'/'}>
           <h2 className='text-center text-neutral-content md:text-start'>Kitaby</h2>
