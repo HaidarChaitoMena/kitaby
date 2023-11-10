@@ -2,7 +2,7 @@ import NavBar from '@/components/NavBar';
 import '../../public/static/styles/globals.css';
 import type { Metadata } from 'next';
 import { Nunito } from 'next/font/google';
-import SideBar from '@/components/SideBar';
+import SideBar from '@/components/sidebar/SideBar';
 import SearchBar from '@/components/SearchBar';
 
 const nunito = Nunito({ subsets: ['latin'] });

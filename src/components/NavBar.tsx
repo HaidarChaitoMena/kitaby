@@ -19,7 +19,7 @@ export default function NavBar({}: props) {
       <div className='flex flex-row justify-start md:flex-col'>
         <Link
           href={'/'}
-          className={`mb-2  flex h-14 w-full items-center justify-center p-5 pl-0 text-start md:justify-start md:rounded-l-3xl ${
+          className={`mb-2 flex h-14 w-full items-center justify-center p-5 pl-0 text-start hover:bg-primary md:justify-start md:rounded-l-3xl ${
             pathname == '/' ? 'bg-primary' : ''
           }`}
         >
