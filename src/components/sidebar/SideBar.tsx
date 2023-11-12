@@ -1,5 +1,7 @@
 import { Book } from '@/types/Book';
 import SmallBookCard from './SmallBookCard';
+import Image from 'next/image';
+import Link from 'next/link';
 
 type props = {
   selectedBook: Book;
@@ -54,10 +56,16 @@ export default function SideBar({ selectedBook, featuredBooks }: props) {
         </div>
       </section>
       <section className='flex-none'>
-        <div className='mx-auto rounded-xl bg-primary p-4'>
-          <h3 className='text-primary-content'>Special Offer</h3>
-          <div className='p-2'>
-            <div></div>
+        <div className='card image-full w-full bg-base-100 shadow-xl'>
+          <figure>
+            <Image fill src={'/static/images/offers/offer1.png'} alt='Shoes' />
+          </figure>
+          <div className='card-body'>
+            <h2 className='card-title self-center'>Spciaal Offer!</h2>
+            <p className='mb-0 text-center'>50% on everything</p>
+            <Link href={'/products/all'} className='btn btn-primary hover:brightness-105'>
+              Copy
+            </Link>
           </div>
         </div>
       </section>

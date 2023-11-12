@@ -23,7 +23,7 @@ export default function SmallBookCard({ book }: props) {
       custom={book.id}
       animate='visible'
       initial='hidden'
-      className='card card-side mb-4 h-24 w-full p-2 hover:cursor-pointer hover:bg-primary'
+      className='card card-side mb-4 h-24 w-full p-2 duration-150 ease-in-out hover:cursor-pointer hover:bg-primary'
     >
       <Image
         className='my-0 h-20 w-24 rounded-md'

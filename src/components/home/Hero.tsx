@@ -18,7 +18,7 @@ export default function Hero() {
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur id, voluptate voluptatibus
         at laudantium esse facilis
       </div>
-      <Link href={'/products/all'} className='btn btn-neutral hover:bg-primary'>
+      <Link href={'/products/all'} className='btn btn-neutral hover:brightness-75'>
         Explore
       </Link>
     </div>

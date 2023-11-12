@@ -19,7 +19,7 @@ export default function NavBar({}: props) {
       <div className='flex flex-row justify-start md:flex-col'>
         <Link
           href={'/'}
-          className={`mb-2 flex h-14 w-full items-center justify-center p-5 pl-0 text-start hover:bg-primary md:justify-start md:rounded-l-3xl ${
+          className={`mb-2 flex h-14 w-full items-center justify-center p-5 pl-0 text-start duration-150 ease-in-out hover:bg-primary md:justify-start md:rounded-l-3xl ${
             pathname == '/' ? 'bg-primary' : ''
           }`}
         >
@@ -28,7 +28,7 @@ export default function NavBar({}: props) {
         </Link>
         <Link
           href={'/discover'}
-          className={`mb-2  flex h-14 w-full items-center justify-center text-start md:justify-start md:rounded-l-3xl md:p-5 md:pl-0 ${
+          className={`easy-in-out  mb-2 flex h-14 w-full items-center justify-center text-start duration-150 hover:bg-primary md:justify-start md:rounded-l-3xl md:p-5 md:pl-0 ${
             pathname == '/discover' ? 'bg-primary' : ''
           }`}
         >
@@ -37,7 +37,7 @@ export default function NavBar({}: props) {
         </Link>
         <Link
           href={'/categories'}
-          className={`mb-2  flex h-14 w-full items-center justify-center p-5 pl-0 text-start md:justify-start md:rounded-l-3xl ${
+          className={`easy-in-out  mb-2 flex h-14 w-full items-center justify-center p-5 pl-0 text-start duration-150 hover:bg-primary md:justify-start md:rounded-l-3xl ${
             pathname == '/categories' ? 'bg-primary' : ''
           }`}
         >
@@ -46,7 +46,7 @@ export default function NavBar({}: props) {
         </Link>
         <Link
           href={'/favorites'}
-          className={`mb-2  flex h-14 w-full items-center justify-center p-5 pl-0 text-start md:justify-start md:rounded-l-3xl ${
+          className={`easy-in-out  mb-2 flex h-14 w-full items-center justify-center p-5 pl-0 text-start duration-150 hover:bg-primary md:justify-start md:rounded-l-3xl ${
             pathname == '/favorites' ? 'bg-primary' : ''
           }`}
         >

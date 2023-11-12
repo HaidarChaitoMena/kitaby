@@ -23,10 +23,10 @@ export default function BookCard({ book }: props) {
       custom={book.id}
       animate='visible'
       initial='hidden'
-      className='card card-side mb-4 h-60 w-full md:w-1/2'
+      className='card card-side mb-4 h-60 w-full pl-6 duration-150 ease-in-out hover:cursor-pointer hover:bg-secondary md:w-1/2'
     >
       <Image
-        className='h-60 w-36 rounded-md'
+        className='h-44 w-36 rounded-md'
         height={100}
         width={100}
         src={'/static/images/books/' + book.image}
