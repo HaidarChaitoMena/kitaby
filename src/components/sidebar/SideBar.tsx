@@ -10,7 +10,7 @@ type props = {
 
 export default function SideBar({ selectedBook, featuredBooks }: props) {
   return (
-    <div className='w-full flex-col p-8 md:w-1/4'>
+    <div className='mx-8 mt-8 w-full flex-col md:w-1/4'>
       <section className='mb-4 flex-none'>
         <div className='mx-auto rounded-xl bg-primary p-4'>
           <h3 className='text-primary-content'>Details</h3>
@@ -60,7 +60,7 @@ export default function SideBar({ selectedBook, featuredBooks }: props) {
           <figure>
             <Image fill src={'/static/images/offers/offer1.png'} alt='Shoes' />
           </figure>
-          <div className='card-body'>
+          <div className='card-body p-4'>
             <h2 className='card-title self-center'>Spciaal Offer!</h2>
             <p className='mb-0 text-center'>50% on everything</p>
             <Link href={'/products/all'} className='btn btn-primary hover:brightness-105'>

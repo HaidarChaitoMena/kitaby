@@ -1,6 +1,6 @@
 export default function SearchBar() {
   return (
-    <form method='GET' className='mb-4 w-full'>
+    <form method='GET' className='mb-4 w-full pt-8 '>
       <div className='relative '>
         <span className='absolute inset-y-0 left-0 flex items-center pl-2'>
           <button

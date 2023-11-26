@@ -16,10 +16,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang='en'>
       <body
-        className={`${nunito.className} prose flex max-w-none flex-col prose-headings:m-0 prose-a:no-underline md:flex-row`}
+        className={`${nunito.className} prose flex max-w-none flex-col py-0 prose-headings:m-0 prose-a:no-underline md:flex-row`}
       >
         <NavBar />
-        <main className='h-full min-h-screen w-full rounded-3xl  bg-primary p-8 px-6 md:px-14'>
+        <main className='h-full max-h-screen min-h-screen w-full overflow-y-scroll rounded-3xl bg-primary px-6 py-0 md:px-14'>
           <SearchBar />
           {children}
         </main>
